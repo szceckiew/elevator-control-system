@@ -31,8 +31,8 @@ if (parseInt(floorsAmountObj.innerText) < 1) {
   floorsAmountObj.innerText = 1;
 }
 
-if (parseInt(floorsAmountObj.innerText) > Number.MAX_SAFE_INTEGER) {
-  floorsAmountObj.innerText = Number.MAX_SAFE_INTEGER;
+if (parseInt(floorsAmountObj.innerText) > 100000) {
+  floorsAmountObj.innerText = 100000;
 }
 
 let floorsAmount = parseInt(floorsAmountObj.innerText);

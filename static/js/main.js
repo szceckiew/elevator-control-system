@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setWrongFloors();
         amountsSelectFloorsErrorMessage.innerText =
           'There must be at least 1 floor';
-      } else if (parseInt(floorsAmount.value) > Number.MAX_SAFE_INTEGER) {
+      } else if (parseInt(floorsAmount.value) > 100000) {
         //floors amount is wrong
         setWrongFloors();
         amountsSelectFloorsErrorMessage.innerText = 'Floor amount is too high';
