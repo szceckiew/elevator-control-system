@@ -7,7 +7,11 @@ Do testowania i używania systemu stworzyłem również aplikację webową korzy
 ![image](https://github.com/szceckiew/elevator-control-system/assets/115181486/4883223d-2c7a-420b-bc62-362a4de06d44)
 
 ## Uruchomienie
-Wystarczy wykonać komendę:
+Wystarczy uruchomić środowisko wirtualne, pobrać Django:
+
+`pip install django `
+
+i wykonać komendę:
 
 `py manage.py runserver`
 
@@ -17,6 +21,7 @@ z głównego katalogu projektu.
 W przypadku naciśnięcia przycisku na piętrze: system zawsze wybiera najbliższą windę, jeżeli ta spełnia jeden z warunków:
 1. Winda stoi.
 2. Winda ma piętro "po drodze", to znaczy w - dużym uproszczeniu - że nie będzie musiała zmieniać kierunku jazdy by obsłużyć kolejnego użytkownika.
+
 Bardzo ważny jest kierunek, w którym chce jechać użytkownik:
 Jeżeli winda jest na 1 piętrze i pierwszy użytkownik będzie chciał jechać w górę na 3 piętrze, to przypisana do tego winda będzie mogła obsłużyć nowego użytkownika tylko wtedy, jeżeli znajduje się on niżej niż użytkownik pierwszy i też będzie chciał jechać w górę.
 
@@ -24,7 +29,7 @@ Inny przykład:
 Jeżeli winda jest na 1 piętrze i pierwszy użytkownik będzie chciał jechać w doł na 3 piętrze, to przypisana do tego winda nie będzie mogła obsłużyć nowego użytkownika, ponieważ nie ważne na którym piętrze by on się znajdował i w którą stronę jechał winda mogłaby (nie wiemy, na które piętro chce jechać nowy użytkownik - znamy tylko kierunek) lub musiałaby zmienić kierunek.
 
 W przypadku remisu co do odległości naciśnięcie obsłuży winda o najmniejszym id.
-Warto dodać, że ilość pięter na, których zatrzyma się dana winda wpływa również w małym stopniu na "odległość".
+Warto dodać, że ilość pięter, na których zatrzyma się dana winda, wpływa również w małym stopniu na "odległość".
 
 Każda winda zatrzymuje się na piętrze na 2 kroki symulacji.
 
