@@ -1,0 +1,45 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <script type="module" src="{% static 'js/main.js' %}" defer></script>
+  </head>
+  <body>
+    <div class="amountsSelect">
+      <h2>Your Building Settings:</h2>
+      <div class="container">
+        <div class="amountsSelectorsContainer row">
+          <div class="col col-md-4 col-sm-12">
+            <label>
+              <input
+                type="number"
+                id="amountsSelectElevators"
+                placeholder=" How many elevators?"
+              />
+              <p class="hiddenClass" id="amountsSelectElevatorsErrorMessage">
+                Error
+              </p>
+            </label>
+          </div>
+          <div class="col col-md-4 col-sm-12">
+            <label>
+              <input
+                type="number"
+                id="amountsSelectFloors"
+                placeholder="How many floors?"
+              />
+              <p class="hiddenClass" id="amountsSelectFloorsErrorMessage">
+                Error
+              </p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" id="amountsSelectButton">Build</button>
+  </body>
+</html>

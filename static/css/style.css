@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+  background-color: cadetblue;
+  color: whitesmoke;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+/* home.html */
+
+#amountsSelectElevators,
+#amountsSelectFloors,
+#amountsSelectButton {
+  border-radius: 20px;
+  padding: 40px 50px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+#amountsSelectButton {
+  background-color: rgb(115, 219, 223);
+  border: 1px solid rgb(0, 115, 119);
+}
+
+#amountsSelectButton:hover {
+  background-color: rgb(0, 115, 119);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+#amountsSelectButton:active {
+  background-color: rgb(0, 163, 168);
+  color: whitesmoke;
+}
+
+.amountsSelectorsContainer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.amountsSelectorsContainer input {
+  margin: 10px 20px 10px;
+}
+
+/* End home.html */
+
+/* building.html */
+
+.classCallQueue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.building {
+  text-align: center;
+  align-items: center;
+}
+
+.floor {
+  background-color: rgb(175, 175, 175);
+  border: 1px solid #000000;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.title {
+  margin-bottom: 100px;
+  font-size: 50px;
+}
+
+/* Buttons and inputs */
+.elevatorsButtonsContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.radioButtonsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.radioButtons label {
+  margin-bottom: 5px;
+  font-size: 35px;
+}
+
+#simulationStepButton {
+  border-radius: 20px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#floorButtonInput,
+#floorButtonSubmit,
+#elevatorButtonIdInput,
+#elevatorButtonFloorInput,
+#floorButtonSubmit,
+#elevatorButtonSubmit {
+  border-radius: 5px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+#floorButtonSubmit,
+#elevatorButtonSubmit,
+#simulationStepButton {
+  background-color: rgb(115, 219, 223);
+  border: 1px solid rgb(0, 115, 119);
+  border-radius: 20px;
+}
+
+#floorButtonSubmit:hover,
+#elevatorButtonSubmit:hover,
+#simulationStepButton:hover {
+  background-color: rgb(0, 115, 119);
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+#floorButtonSubmit:active,
+#elevatorButtonSubmit:active,
+#simulationStepButton:active {
+  background-color: rgb(0, 163, 168);
+  color: whitesmoke;
+}
+
+#elevatorButtonFloorInput {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#elevatorsButtonsContainerText,
+#radioButtonsContainerText {
+  font-size: 35px;
+}
+
+/* End Buttons and inputs */
+/* End building.html */
+
+/* validation */
+#amountsSelectElevatorsErrorMessage,
+#amountsSelectFloorsErrorMessage {
+  color: rgb(255, 0, 0);
+  font-size: 19px;
+}
+
+.wrongInput {
+  border-color: red !important;
+}
+
+.hiddenClass {
+  color: cadetblue !important;
+}
+
+/* end validation */
